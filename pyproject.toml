@@ -24,8 +24,11 @@ line_length = 100
 include_trailing_comma = true
 
 [tool.pylint.messages_control]
-disable = """
-invalid-name,missing-module-docstring,R0801,E0633,E0401
+disable="""
+R,C,W,E
+"""
+enable = """
+import-error,unused-import
 """
 
 [tool.bandit]

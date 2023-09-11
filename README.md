@@ -58,7 +58,7 @@ python 01-main.py  \
 
 ### Automatic execution (recommended)
 
-If you run all experiments from the manuscript and its appendix you can do it automatically using Snakemake.
+If you want to run all experiments from the manuscript and the appendix you can do it automatically using Snakemake. 
 
 On a HPC cluster you can use
 
@@ -70,7 +70,10 @@ where `--cluster {sbatch/qsub/bsub}` specifies the command your cluster uses for
 For instance, to run on a SLURM cluster:
 
 ```bash
-snakemake --cluster "sbatch --mem-per-cpu=4096 --time=4:00:00" --jobs 100  --configfile=snake_config.yaml
+snakemake \
+  --cluster "sbatch --mem-per-cpu=4096 --time=4:00:00" \
+  --jobs 100  \
+  --configfile=snake_config.yaml
 ```
 
 In the above scenario, Snakemake would run 100 jobs with 4Gb memory and a time limit of 4h each and resubmit jobs once less than 100 jobs are queued/running.

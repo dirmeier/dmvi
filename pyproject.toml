@@ -1,0 +1,32 @@
+[tool.black]
+line-length = 100
+extend-ignore = "E203"
+target-version = ['py39']
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+  | dmvi/dpm_solver.py
+)/
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 100
+include_trailing_comma = true
+
+[tool.pylint.messages_control]
+disable = """
+invalid-name,missing-module-docstring,R0801,E0633,E0401
+"""
+
+[tool.bandit]
+skips = ["B101"]

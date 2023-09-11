@@ -1,0 +1,28 @@
+.DS_Store
+
+# Renku
+.renku.lock
+.renku/tmp
+.renku/cache
+
+# JupyterLab
+.ipynb_checkpoints
+
+# Testing
+.tox
+.mypy_cache
+
+### Python ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+.snakemake/
+.snakemake/*
+
+lsf.*
+slurm.*
+
+test/
+test/*

@@ -1,0 +1,16 @@
+absl-py==1.4.0
+arviz==0.15.1
+attrs==23.1.0
+blackjax-nightly==0.9.6.post167
+chex==0.1.7
+distrax==0.1.3
+dm-haiku==0.0.9
+jax==0.4.12
+jaxlib==0.4.12
+ml-collections==0.1.1
+optax==0.1.4
+orbax-checkpoint==0.2.4
+pandas==2.0.2
+rmsyutls==0.0.1
+snakemake==7.26.0
+tfp-nightly[jax]==0.20.0.dev20230603

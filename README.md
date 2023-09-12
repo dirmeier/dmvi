@@ -84,19 +84,3 @@ On a single desktop computer, run all experiments sequentially via
 ```bash
 snakemake  --configfile=snake_config.yaml
 ```
-
-## Citation
-
-If you want to cite the manuscript, please use the following quotation
-
-```
-@article{dirmeier2023diffusion,
-  title={Diffusion models for probabilistic programming},
-  author={Simon Dirmeier and Fernando Perez-Cruz},
-  journal={ArXiv},
-  year={2023}
-}
-```
-## Author
-
-Simon Dirmeier <a href="mailto:sfyrbnd @ pm me">sfyrbnd @ pm me</a>

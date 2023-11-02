@@ -1,15 +1,20 @@
 # Diffusion models for probabilistic programming
 
 [![status](http://www.repostatus.org/badges/latest/concept.svg)](http://www.repostatus.org/#concept)
+[![arXiv](https://img.shields.io/badge/arXiv-2311.00474-b31b1b.svg)](https://arxiv.org/abs/2311.00474)
 
 ## About
 
-This repository implements the Python code for the NeurIPS workshop submission "Diffusion models for probabilistic programming".
-Folder structure is as following:
+This repository contains the Python code for reproducing the results in the paper
+
+> Simon Dirmeier and Fernando Perez-Cruz. *Diffusion models for probabilistic programming*. NeurIPS Workshop on Diffusion models, 2023.
+> [[arXiv]](https://arxiv.org/abs/2311.00474)
+
+The folder structure is as following:
 
 - `configs` contains configuration files for the different inferential algorithms,
 - `data_and_models` contains generative experimental models used for validating the inferential algorithms,
-- `dmvi` contains the soucre code of the developed method and baseline implementations,
+- `dmvi` contains the source code of the developed method and baseline implementations,
 - `experiments` contains source code with the logic to run the experiments,
 - `.*py` files are entry point scripts that execute the experiments.
 
@@ -58,7 +63,7 @@ python 01-main.py  \
 
 ### Automatic execution (recommended)
 
-If you want to run all experiments from the manuscript and the appendix you can do it automatically using Snakemake. 
+If you want to run all experiments from the manuscript and the appendix you can do it automatically using Snakemake.
 
 On a HPC cluster you can use
 
@@ -82,5 +87,24 @@ We ran all experiments using these resources.
 On a single desktop computer, run all experiments sequentially via
 
 ```bash
-snakemake  --configfile=snake_config.yaml
+snakemake --configfile=snake_config.yaml
 ```
+
+## Citation
+
+If you find our work relevant to your research, please consider citing:
+
+```
+@article{dirmeier2023dmvi,
+  title={Diffusion models for probabilistic programming},
+  author={Simon Dirmeier and Fernando Perez-Cruz},
+  year={2023},
+  journal={arXiv preprint arXiv:2311.00474}
+}
+```
+
+## Author
+
+Simon Dirmeier <a href="mailto:sfyrbnd @ pm me">sfyrbnd @ pm me</a>
+
+

@@ -95,11 +95,12 @@ snakemake --configfile=snake_config.yaml
 If you find our work relevant to your research, please consider citing:
 
 ```
-@article{dirmeier2023dmvi,
-  title={Diffusion models for probabilistic programming},
-  author={Simon Dirmeier and Fernando Perez-Cruz},
-  year={2023},
-  journal={arXiv preprint arXiv:2311.00474}
+@inproceedings{dirmeier2023diffusion,
+    title={Diffusion models for probabilistic programming},
+    author={Simon Dirmeier and Fernando Perez-Cruz},
+    booktitle={NeurIPS 2023 Workshop on Diffusion Models},
+    year={2023},
+    url={https://openreview.net/forum?id=q5lwpayIrJ}
 }
 ```
 
